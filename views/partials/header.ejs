@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xBlog</title>
+    <link rel="stylesheet" href="/stylesheets/modern-normalize.css">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/utils.css">
+    <link rel="stylesheet" href="/stylesheets/components/header.css">
+    <link rel="stylesheet" href="/stylesheets/blog-page.css">
+    <link rel="stylesheet" href="/stylesheets/create-blog.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+</head>
+
+<body draggable="false">
+    <header class="header container unselectable">
+        <div class="header-logo">
+            <div class="logo" href="#"><img src="/images/logo-light.svg" alt="">Blogger</div>
+        </div>
+        <nav>
+            <ul class="header-menu">
+                <!-- Menu Button with Toggle Menu Function -->
+                <li>
+                    <button class="btn menu-btn">
+                        <img src="/images/icon-light.svg" alt="Blog Icon">
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Overlay for Bottom Menu -->
+            <div class="overlay" id="overlay"></div>
+
+            <!-- Container for Bottom Menu -->
+            <div id="menu">
+                <div class="search-bar">
+                    <input id="search-bar" type="text" placeholder="Search" name="search-bar" autocomplete="off">
+                </div>
+                <!-- Options in Menu -->
+                <ul id="options">
+                    <div class="options-title" id="pages">Pages</div>
+                    <li class="option dropdown">
+                        <a id="b" class="option-link drop-btn" href="#" draggable="false">
+                            <div>
+                                <img src="/images/icons/blog-light.svg" alt="pen-light" loading="lazy">
+                                <p class="option-name">Blog</p>
+                            </div>
+                            <div class="option-command">B</div>
+                        </a>
+                        <a id="create-blog" href="/create-blog" class="dropdown-content" draggable="false">
+                            <div id="create-blog-btn" class="">
+                                <img src="/images/icons/pen-light.svg" alt="light-mode" loading="lazy">
+                                <p>Create blog</p>
+                            </div>
+                        </a>
+                        <a id="view-blog" href="/" class="dropdown-content" draggable="false">
+                            <div id="view-blog-btn" class="">
+                                <img src="/images/icons/view-blog-light.svg" alt="light-mode" loading="lazy">
+                                <p>View blogs</p>
+                            </div>
+                        </a>
+                    </li>
+                    <div class="options-title" id="navigation">Navigation</div>
+                    <li class="option dropdown">
+                        <a id="t" href="#" class="option-link drop-btn" draggable="false">
+                            <div>
+                                <img src="/images/icons/theme-light.svg" alt="pen-light" loading="lazy">
+                                <p class="option-name">Themes</p>
+                            </div>
+                            <div class="option-command">T</div>
+                        </a>
+                        <a id="t-mode" href="#" class="dropdown-content" draggable="false">
+                            <div id="theme-select-btn" class="">
+                                <img src="/images/light.svg" alt="light-mode" loading="lazy">
+                                <p>Light mode</p>
+                            </div>
+                        </a>
+                    </li>
+                    <div class="options-title" id="navigation">Social</div>
+                    <li class="option">
+                        <a id="i" class="option-link" href="https://www.instagram.com/mohammedazhar_/" target="_blank">
+                            <div>
+                                <img src="/images/icons/instagram-light.svg" alt="pen-light" loading="lazy">
+                                <p class="option-name">Instagram</p>
+                            </div>
+                            <div class="option-command">I</div>
+                        </a>
+                    </li>
+                    <li class="option">
+                        <a id="x" class="option-link" href="https://twitter.com/MohammeddAzhar" target="_blank">
+                            <div>
+                                <img src="/images/icons/twitter-light.svg" alt="pen-light" loading="lazy">
+                                <p class="option-name">X</p>
+                            </div>
+                            <div class="option-command">X</div>
+                        </a>
+                    </li>
+                    <li class="option">
+                        <a id="l" class="option-link" href="https://www.linkedin.com/in/mohammeddazhar/"
+                            target="_blank">
+                            <div>
+                                <img src="/images/icons/linkedin-light.svg" alt="pen-light" loading="lazy">
+                                <p class="option-name">Linkedin</p>
+                            </div>
+                            <div class="option-command">L</div>
+                        </a>
+                    </li>
+
+                    <!-- Add more options as needed -->
+                </ul>
+            </div>
+        </nav>
+
+    </header>

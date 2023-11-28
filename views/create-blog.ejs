@@ -1,0 +1,24 @@
+<%- include("./partials/header.ejs") %>
+
+    <main class="container">
+        <form class="blog-form" action="/post-blog" method="post">
+            <label for="blogName">Blog Name</label>
+            <input type="text" id="blogName" name="blogName" placeholder="Enter blog name"
+                value="<%= locals.blogToUpdate ? blogToUpdate.title : '' %>" autocomplete="off" required />
+            <label for="blogDescription">Description</label>
+            <input type="text" id="blogDescription" name="blogDescription" placeholder="Blog description"
+                value="<%= locals.blogToUpdate ? blogToUpdate.description : '' %>" autocomplete="off" required />
+            <label for="blogContent">Write your blog</label>
+            <textarea name="blogContent" id="blogContent" cols="30" rows="10" autocomplete="off"
+                required><%= locals.blogToUpdate ? blogToUpdate.body : '' %></textarea>
+            <input type="submit" name="submit" value="<%= locals.blogToUpdate ? " Update Blog" : 'Create Blog' %>"
+            id="create-btn" />
+            <input id="form-id" name="id" value="<%= locals.blogToUpdate ? locals.blogToUpdate.id : null %>" />
+        </form>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/javascripts/script.js"></script>
+    </body>
+
+    </html>

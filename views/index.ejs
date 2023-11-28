@@ -1,0 +1,39 @@
+<%- include("./partials/header.ejs") %>
+
+    <main class="container">
+        <% blogPosts.forEach((blog)=> { %>
+            <div class="section">
+                <div class="blog">
+                    <div class="blog-date">
+                        <%= blog.date %>
+                    </div>
+                    <div class="blog-title">
+                        <%= blog.title %>
+                    </div>
+                    <div class="blog-description">
+                        <%= blog.description %>
+                    </div>
+                    <div class="blog-body">
+                        <p>
+                            <%- blog.body %>
+                        </p>
+                    </div>
+                    <div class="blog-footer">
+                        <form action="/update/<%= blog.id %>" method="post">
+                            <button type="submit">Update</button>
+                        </form>
+                        <form action="/delete/<%= blog.id %>" method="get">
+                            <button type="submit">Delete</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+    </main>
+
+    <footer></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/javascripts/script.js"></script>
+    </body>
+
+    </html>

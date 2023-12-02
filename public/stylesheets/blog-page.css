@@ -88,6 +88,11 @@
 
 /* Responsive Design Breakpoints */
 @media (min-width: 300px) and (max-width: 639px) {
+  .container {
+    width: 100%;
+    max-width: 639px;
+  }
+  
   .blog-title {
     font-size: 2rem;
   }

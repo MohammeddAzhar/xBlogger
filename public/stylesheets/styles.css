@@ -22,7 +22,7 @@ body {
   font-family: "General Sans", sans-serif;
   background-color: var(--clr-black);
   color: var(--clr-light-gray);
-overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body.menu-open {

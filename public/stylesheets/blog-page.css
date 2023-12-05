@@ -37,6 +37,10 @@
   filter: blur(0);
 }
 
+.blog-body > p {
+  width: 100%;
+}
+
 .blog-footer {
   margin-top: 0.5rem;
   opacity: 0;

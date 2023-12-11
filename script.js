@@ -20,6 +20,41 @@ const blogPosts = [
     body: `I am a self taught Fullstack Software Developer; though not having a CSE or IT degree didn't stop me from following my curiosity and intuition and learning software engineering. I like software engineering <em>(it's not that I'm obsessed)</em>, creating software, and learning different tech stacks, languages and technologies especially the <strong>JavaScript</strong> and <strong>React</strong> ecosystem.`,
     id: 2,
   },
+  {
+    date: `23/11/2023`,
+    title: `Serene Moments`,
+    description: `Embracing tranquility in the ordinary.`,
+    body: `In the soft hues of dawn, find the melody of your heartbeat. "Serene Moments" captures the poetry of everyday life, where the mundane becomes a canvas for serenity. Join me in savoring the beauty in simplicity.`,
+    id: 3,
+  },
+  {
+    date: `24/11/2023`,
+    title: `Echoes of Laughter`,
+    description: `Celebrating joy in the small and the big.`,
+    body: `Amidst the chaos, laughter echoes like a timeless melody. "Echoes of Laughter" captures the moments that make your soul dance. Join me in celebrating the symphony of joy that orchestrates our everyday lives.`,
+    id: 4,
+  },
+  {
+    date: `26/11/2023`,
+    title: `Gratitude Gazette`,
+    description: `Nourishing the soul with thankfulness.`,
+    body: `In the garden of life, gratitude is the water that makes every flower bloom. "Gratitude Gazette" is a daily dose of appreciation for the little miracles that color our world. Join me in cultivating a garden of thankfulness.`,
+    id: 5,
+  },
+  {
+    date: `27/11/2023`,
+    title: `Soulful Strolls`,
+    description: `Taking mindful steps in the journey of life.`,
+    body: `Life is a series of steps, each one a journey in itself. "Soulful Strolls" invites you to walk with purpose and presence, discovering the profound in the simplicity of each step. Let's embark on a mindful journey together.`,
+    id: 6,
+  },
+  {
+    date: `29/11/2023`,
+    title: `Whispers of Wisdom`,
+    description: `Gathering insights from everyday experiences.`,
+    body: `Wisdom is not confined to ancient texts; it often whispers through the fabric of our daily lives. "Whispers of Wisdom" is a collection of insights drawn from ordinary moments, offering profound lessons hidden in plain sight.`,
+    id: 7,
+  },
 ];
 
 // Set up view engine
